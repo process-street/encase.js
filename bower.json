@@ -1,0 +1,33 @@
+{
+  "name": "encase.js",
+  "version": "1.0.0",
+  "authors": [
+    "Cameron McKay <cameron@process.st>"
+  ],
+  "description": "A utility library for changing between camel case, snake case, kebab case and more",
+  "main": "encase.js",
+  "moduleType": [
+    "amd",
+    "node",
+    "globals"
+  ],
+  "keywords": [
+    "encase",
+    "case",
+    "change",
+    "camel",
+    "snake",
+    "kebab",
+    "lower",
+    "upper"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/process-street/encase.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "encase.js",
+  "version": "1.0.0",
+  "description": "A utility library for changing between camel case, snake case, kebab case and more",
+  "main": "encase.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "karma-jasmine": "^0.3.6",
+    "karma-chrome-launcher": "^0.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/process-street/encase.js.git"
+  },
+  "author": "Cameron McKay <cameron@process.st>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/process-street/encase.js/issues"
+  },
+  "homepage": "https://github.com/process-street/encase.js#readme"
+}
