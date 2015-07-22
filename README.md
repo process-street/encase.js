@@ -1,4 +1,4 @@
-# ES6-ish String formatter
+# Encase.js
 
 An JavaScript library for changing between camelCase, snake_case, kebab-case, and more.  
 
