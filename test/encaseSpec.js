@@ -83,4 +83,36 @@ describe('encase', function () {
         expect(convertedStr).toBe('SOME-THING');
     });
 
+    // to*
+
+    it('should be the same as convertCase to lowerCamel', function () {
+        var str = 'some-attribute';
+        expect(Encase.toLowerCamel(str)).toBe(Encase.convertCase(Encase.Case.LOWER_CAMEL, str));
+    });
+
+    it('should be the same as convertCase to UpperCamel', function () {
+        var str = 'some-attribute';
+        expect(Encase.toUpperCamel(str)).toBe(Encase.convertCase(Encase.Case.UPPER_CAMEL, str));
+    });
+
+    it('should be the same as convertCase to lower_snake', function () {
+        var str = 'someVariable';
+        expect(Encase.toLowerSnake(str)).toBe(Encase.convertCase(Encase.Case.LOWER_SNAKE, str));
+    });
+
+    it('should be the same as convertCase to UPPER_SNAKE', function () {
+        var str = 'someVariable';
+        expect(Encase.toUpperSnake(str)).toBe(Encase.convertCase(Encase.Case.UPPER_SNAKE, str));
+    });
+
+    it('should be the same as convertCase to lower-kebab', function () {
+        var str = 'someVariable';
+        expect(Encase.toLowerKebab(str)).toBe(Encase.convertCase(Encase.Case.LOWER_KEBAB, str));
+    });
+
+    it('should be the same as convertCase to UPPER-KEBAB', function () {
+        var str = 'someVariable';
+        expect(Encase.toUpperKebab(str)).toBe(Encase.convertCase(Encase.Case.UPPER_KEBAB, str));
+    });
+
 });

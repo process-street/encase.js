@@ -67,7 +67,13 @@
         separate: separate,
         convert: convert,
         Case: Case,
-        convertCase: convertCase
+        convertCase: convertCase,
+        toLowerCamel: convertCase.bind(null, Case.LOWER_CAMEL),
+        toUpperCamel: convertCase.bind(null, Case.UPPER_CAMEL),
+        toLowerSnake: convertCase.bind(null, Case.LOWER_SNAKE),
+        toUpperSnake: convertCase.bind(null, Case.UPPER_SNAKE),
+        toLowerKebab: convertCase.bind(null, Case.LOWER_KEBAB),
+        toUpperKebab: convertCase.bind(null, Case.UPPER_KEBAB)
     };
 
     // Allow library to be used in browser or node.js
