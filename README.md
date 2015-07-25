@@ -26,6 +26,14 @@ var convertedStr = Encase.convertCase(Encase.Case.LOWER_SNAKE, str);
 // = 'camel_case'
 ```
 
+Or, if you're not a fan of verbosity:
+
+```javascript
+var str = 'camelCase';
+var convertedStr = Encase.toLowerSnake(str);
+// = 'camel_case'
+```
+
 Encase automatically detects the "from" case, so you only have to tell it what you want to switch to. It also provides
 a general `separate` function for splitting up strings:
 
