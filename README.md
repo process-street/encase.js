@@ -1,4 +1,4 @@
-# Encase.js
+# encase.js
 
 An JavaScript library for changing between camelCase, snake_case, kebab-case, and more.  
 
