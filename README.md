@@ -1,4 +1,4 @@
-# encase.js
+# encase.js [![Build Status](https://travis-ci.org/process-street/encase.js.svg?branch=master)](https://travis-ci.org/process-street/encase.js)
 
 An JavaScript library for changing between camelCase, snake_case, kebab-case, and more.  
 
