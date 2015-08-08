@@ -49,70 +49,38 @@ describe('encase', function () {
 
     it('should convert lower-kebab to lowerCamel', function () {
         var str = 'some-attribute';
-        var convertedStr = Encase.convertCase(Encase.Case.LOWER_CAMEL, str);
+        var convertedStr = Encase.toLowerCamel(str);
         expect(convertedStr).toBe('someAttribute');
     });
 
     it('should convert UPPER_SNAKE to UpperCamel', function () {
         var str = 'SOME_CONSTANT';
-        var convertedStr = Encase.convertCase(Encase.Case.UPPER_CAMEL, str);
+        var convertedStr = Encase.toUpperCamel(str);
         expect(convertedStr).toBe('SomeConstant');
     });
 
     it('should convert between lowerCamel and lower_snake', function () {
         var str = 'someAttribute';
-        var convertedStr = Encase.convertCase(Encase.Case.LOWER_SNAKE, str);
+        var convertedStr = Encase.toLowerSnake(str);
         expect(convertedStr).toBe('some_attribute');
     });
 
     it('should convert between UPPER-KEBAB and UPPER_SNAKE', function () {
         var str = 'SOME-CONSTANT';
-        var convertedStr = Encase.convertCase(Encase.Case.UPPER_SNAKE, str);
+        var convertedStr = Encase.toUpperSnake(str);
         expect(convertedStr).toBe('SOME_CONSTANT');
     });
 
     it('should convert between UpperCamel and lower-kebab', function () {
         var str = 'SomeClass';
-        var convertedStr = Encase.convertCase(Encase.Case.LOWER_KEBAB, str);
+        var convertedStr = Encase.toLowerKebab(str);
         expect(convertedStr).toBe('some-class');
     });
 
     it('should convert between lower_snake and UPPER-KEBAB', function () {
         var str = 'some_thing';
-        var convertedStr = Encase.convertCase(Encase.Case.UPPER_KEBAB, str);
+        var convertedStr = Encase.toUpperKebab(str);
         expect(convertedStr).toBe('SOME-THING');
-    });
-
-    // to*
-
-    it('should be the same as convertCase to lowerCamel', function () {
-        var str = 'some-attribute';
-        expect(Encase.toLowerCamel(str)).toBe(Encase.convertCase(Encase.Case.LOWER_CAMEL, str));
-    });
-
-    it('should be the same as convertCase to UpperCamel', function () {
-        var str = 'some-attribute';
-        expect(Encase.toUpperCamel(str)).toBe(Encase.convertCase(Encase.Case.UPPER_CAMEL, str));
-    });
-
-    it('should be the same as convertCase to lower_snake', function () {
-        var str = 'someVariable';
-        expect(Encase.toLowerSnake(str)).toBe(Encase.convertCase(Encase.Case.LOWER_SNAKE, str));
-    });
-
-    it('should be the same as convertCase to UPPER_SNAKE', function () {
-        var str = 'someVariable';
-        expect(Encase.toUpperSnake(str)).toBe(Encase.convertCase(Encase.Case.UPPER_SNAKE, str));
-    });
-
-    it('should be the same as convertCase to lower-kebab', function () {
-        var str = 'someVariable';
-        expect(Encase.toLowerKebab(str)).toBe(Encase.convertCase(Encase.Case.LOWER_KEBAB, str));
-    });
-
-    it('should be the same as convertCase to UPPER-KEBAB', function () {
-        var str = 'someVariable';
-        expect(Encase.toUpperKebab(str)).toBe(Encase.convertCase(Encase.Case.UPPER_KEBAB, str));
     });
 
 });

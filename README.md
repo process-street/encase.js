@@ -22,17 +22,18 @@ This method will provides a global Encase object. That means that once you inclu
 
 ```javascript
 var str = 'camelCase';
-var convertedStr = Encase.convertCase(Encase.Case.LOWER_SNAKE, str);
-// = 'camel_case'
-```
-
-Or, if you're not a fan of verbosity:
-
-```javascript
-var str = 'camelCase';
 var convertedStr = Encase.toLowerSnake(str);
 // = 'camel_case'
 ```
+
+Encase supports switching to 6 cases:
+
+* `toLowerCamel` (e.g. `someVariableName`)
+* `toUpperCamel` (e.g. `SomeVariableName`)
+* `toLowerSnake` (e.g. `some_variable_name`)
+* `toUpperSnake` (e.g. `SOME_VARIABLE_NAME`)
+* `toLowerKebab` (e.g. `some-variable-name`)
+* `toUpperKebab` (e.g. `SOME-VARIABLE-NAME`)
 
 Encase automatically detects the "from" case, so you only have to tell it what you want to switch to. It also provides
 a general `separate` function for splitting up strings:
@@ -43,7 +44,7 @@ var words = Encase.separate(str);
 // = ['camel', 'Case']
 ```
 
-Encase also provides a lower level `convert` function for making arbitrary conversions. 
+In addition to `separate`, Encase provides a `convert` function for making arbitrary conversions to any case:
 
 The arguments are:
 

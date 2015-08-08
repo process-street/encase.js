@@ -1,6 +1,6 @@
 {
   "name": "encase.js",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A utility library for changing between camel case, snake case, kebab case and more",
   "main": "encase.js",
   "directories": {
