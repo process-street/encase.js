@@ -8,8 +8,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "karma-jasmine": "^0.3.6",
-    "karma-chrome-launcher": "^0.2.0"
+    "gulp": "^3.9.0",
+    "gulp-jasmine": "^2.0.1",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

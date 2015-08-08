@@ -1,6 +1,8 @@
 describe('encase', function () {
     "use strict";
 
+    var Encase = require('../encase.js').Encase;
+
     // separate
 
     it('should separate lowerCamel case', function () {
