@@ -62,6 +62,20 @@ var convertedStr = Encase.convert(toLowerCase, toLowerCase, ':', str);
 // = 'upper:camel'
 ```
 
+And, if you want to get fancy:
+
+```javascript
+Encase.toLowerColon = Encase.convert.bind(null, 
+    Function.prototype.bind.call(String.prototype.toLowerCase),
+    Function.prototype.bind.call(String.prototype.toLowerCase),
+    ':'
+);
+
+var str = 'UpperCamel';
+var convertStr = Encase.toLowerColon(str);
+// = 'upper:camel'
+```
+
 ## Author
 
 | [![twitter/cdmckay](https://gravatar.com/avatar/b181c028e6b51d408450e12ab68bf25c?s=70)](https://twitter.com/cdmckay "Follow @cdmckay on Twitter") |
