@@ -1,7 +1,7 @@
 describe('encase', function () {
     "use strict";
 
-    var Encase = require('../encase.js').Encase;
+    var Encase = require('../encase.js');
 
     // separate
 

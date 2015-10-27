@@ -41,12 +41,14 @@
         toLowerSnake: convert.bind(null, toLowerCase, toLowerCase, '_'),
         toUpperSnake: convert.bind(null, toUpperCase, toUpperCase, '_'),
         toLowerKebab: convert.bind(null, toLowerCase, toLowerCase, '-'),
-        toUpperKebab: convert.bind(null, toUpperCase, toUpperCase, '-')
+        toUpperKebab: convert.bind(null, toUpperCase, toUpperCase, '-'),
+        toLowerSpace: convert.bind(null, toLowerCase, toLowerCase, ' '),
+        toUpperSpace: convert.bind(null, toUpperCase, toUpperCase, ' ')
     };
 
     // Allow library to be used in browser or node.js
     if (typeof exports !== "undefined") {
-        exports.Encase = Encase;
+        module.exports = Encase;
     }
     else {
         window.Encase = Encase;
